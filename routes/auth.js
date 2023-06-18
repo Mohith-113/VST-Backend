@@ -59,7 +59,7 @@ router.post("/Login", async (req, res) => {
 //Admin login
 router.post('/adminlogin', async(req, res) => {
     const {username, password} = req.body;
-    if(username === "admin123" && password === "admin123") {
+    if(username === "VST-Project" && password === "VST-LSMYS") {
         return res.status(200).json('successful');
     }
     else {
