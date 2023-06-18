@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { User } = require('../model/Schema');
-const { Addmve } = require('../model/SchemaAddNve')
 
 router.get('/', async(req, res) => {
     return res.status(200).json(await User.find());
